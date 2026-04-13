@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Helper Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #edf2f7;
+      --muted: #b8c0cc;
+      --accent: #79c0ff;
+      --border: rgba(255, 255, 255, 0.12);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f7f8fb;
+        --card: #ffffff;
+        --text: #0f172a;
+        --muted: #475569;
+        --accent: #2563eb;
+        --border: rgba(15, 23, 42, 0.10);
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font: 16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top right, rgba(121, 192, 255, 0.14), transparent 28%),
+        linear-gradient(180deg, var(--bg), color-mix(in srgb, var(--bg) 88%, black));
+      color: var(--text);
+    }
+
+    main {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 20px 64px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.14);
+    }
+
+    h1, h2 { line-height: 1.2; }
+    h1 { margin: 0 0 10px; font-size: clamp(2rem, 5vw, 3rem); }
+    h2 { margin: 28px 0 10px; font-size: 1.1rem; }
+    p { margin: 0 0 14px; }
+    ul { margin: 0; padding-left: 20px; }
+    li { margin: 0 0 8px; }
+
+    .eyebrow {
+      display: inline-block;
+      margin-bottom: 14px;
+      color: var(--accent);
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    a {
+      color: var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <span class="eyebrow">Privacy Policy</span>
+      <h1>Data Helper</h1>
+      <p class="muted">Last updated: April 13, 2026</p>
+
+      <p>
+        Data Helper is a Chrome extension that adds right-click context menu actions
+        to clean and copy phone numbers, URLs, and formatted numbers to your clipboard.
+      </p>
+
+      <h2>What data Data Helper uses</h2>
+      <ul>
+        <li>Selected text or link URL on the active page, only when the user explicitly triggers a context menu action.</li>
+        <li>The cleaned result is written to the system clipboard and is not retained by the extension.</li>
+      </ul>
+
+      <h2>How Data Helper uses data</h2>
+      <ul>
+        <li>To clean the selected text or link (strip non-digits from phone numbers, remove tracking parameters and fragments from URLs, parse formatted numbers).</li>
+        <li>To copy the cleaned result to the clipboard via a user-initiated action.</li>
+        <li>To display brief toast notifications on the active page confirming the result.</li>
+      </ul>
+
+      <h2>Data sharing and transmission</h2>
+      <ul>
+        <li>Data Helper does not collect, send, or store any user data.</li>
+        <li>Data Helper makes zero network requests. The Content Security Policy enforces <code>connect-src 'none'</code>.</li>
+        <li>Data Helper does not sell, transfer, or share user data with third parties.</li>
+        <li>Data Helper does not use remote code, analytics, or tracking of any kind.</li>
+      </ul>
+
+      <h2>Storage</h2>
+      <ul>
+        <li>Data Helper does not use <code>chrome.storage</code>, <code>localStorage</code>, <code>IndexedDB</code>, cookies, or any other storage mechanism.</li>
+        <li>Cleaned data exists only in the system clipboard and only for as long as the user keeps it there.</li>
+      </ul>
+
+      <h2>Permissions</h2>
+      <ul>
+        <li><strong>contextMenus</strong> — to register right-click menu items.</li>
+        <li><strong>activeTab</strong> — to access the active tab only when the user triggers a menu action.</li>
+        <li><strong>scripting</strong> — to write to the clipboard and display toast notifications on the active tab. Only executes on user gesture.</li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        For support or privacy questions about Data Helper, visit the project repository at
+        <a href="https://github.com/carlos-andres/datahelper-site">https://github.com/carlos-andres/datahelper-site</a>.
+      </p>
+    </section>
+  </main>
+</body>
+</html>
